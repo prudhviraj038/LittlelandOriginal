@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:background="@color/white"
+
+    android:orientation="vertical">
+
+    <!-- <ScrollView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:fillViewport="true">
+ 
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_margin="10dp"
+             android:orientation="vertical">
+ 
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:background="@drawable/orange_stoke_white_background"
+                 android:drawableRight="@drawable/ic_orange_down_arrow"
+                 android:padding="10dp"
+                 android:text="Select Class"
+                 android:textAllCaps="true"
+                 android:textColor="@color/black"
+                 android:textSize="16sp" />
+ 
+ 
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:layout_marginTop="10dp"
+                 android:padding="10dp"
+                 android:text="Or"
+ 
+ 
+                 android:textAllCaps="true"
+                 android:textColor="@color/black"
+                 android:textSize="16sp" />
+ 
+ 
+             <TextView
+                 android:id="@+id/textView"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:background="@drawable/orange_stoke_white_background"
+                 android:drawableRight="@drawable/ic_orange_down_arrow"
+                 android:padding="10dp"
+                 android:text="Select Parents"
+ 
+                 android:textAllCaps="true"
+                 android:textColor="@color/black"
+                 android:textSize="16sp" />
+ 
+ 
+             <EditText
+                 android:id="@+id/et_title"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:background="@drawable/orange_stoke_white_background"
+                 android:hint="Enter Title"
+                 android:padding="10dp"
+                 android:textColor="@color/black"
+                 android:textSize="16sp" />
+ 
+             <EditText
+                 android:id="@+id/et_desc"
+ 
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:background="@drawable/orange_stoke_white_background"
+                 android:gravity="top"
+                 android:hint="Enter Description"
+                 android:maxLines="3"
+                 android:minLines="3"
+                 android:padding="10dp"
+                 android:textColor="@color/black"
+ 
+                 android:textSize="16sp" />
+ 
+ 
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:padding="10dp"
+                 android:gravity="center_vertical"
+                 android:background="@drawable/orange_stoke_white_background"
+                 android:layout_marginTop="10dp">
+ 
+                 <TextView
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="1"
+                     android:textColor="@color/black"
+                     android:textSize="16sp"
+                     android:textAllCaps="true"
+                     android:text="Upload File"/>
+ 
+                 <ImageView
+                     android:layout_width="30dp"
+                     android:layout_height="30dp"
+                     android:src="@drawable/view_post"/>
+ 
+ 
+             </LinearLayout>
+ 
+             <Button
+                 android:id="@+id/btn_submit"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:background="@color/techer_orange"
+                 android:text="Submit"
+                 android:textColor="@color/white"
+                 android:textSize="16sp" />
+ 
+ 
+         </LinearLayout>
+ 
+     </ScrollView>-->
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/techer_calender_bg" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/white"></LinearLayout>
+
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:paddingBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/post_message_radius_drawable"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layoutDirection="rtl"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_select_class"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radius_with_orange_stoke"
+                        android:drawableLeft="@drawable/ic_orange_down_arrow"
+                        android:padding="10dp"
+                        android:text="Select Class"
+                        android:gravity="right"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/stoke_color"></View>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:text="Or"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/stoke_color"></View>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_teacher_spinner"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_select_parents"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/radius_with_orange_stoke"
+                            android:drawableLeft="@drawable/ic_orange_down_arrow"
+                            android:padding="10dp"
+                            android:text="Select Parents"
+                            android:gravity="right"
+
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_parent_spinner"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_select_teachers"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/radius_with_orange_stoke"
+                        android:drawableLeft="@drawable/ic_orange_down_arrow"
+                        android:padding="10dp"
+                        android:text="Select Teachers"
+                        android:gravity="right"
+
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/et_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/radius_with_orange_stoke"
+                    android:hint="Message Title"
+                    android:gravity="right"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_desc"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/low_radius_with_orange_stoke"
+                    android:gravity="center_vertical|right"
+                    android:hint="Message"
+                    android:maxLines="3"
+                    android:visibility="visible"
+                    android:minLines="3"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="175dp"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/ll_take_file"
+                        android:layout_width="match_parent"
+                        android:layout_height="175dp"
+                        android:background="@drawable/low_radius_with_orange_stoke"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:src="@drawable/ic_video_camera" />
+
+                            <com.wang.avi.AVLoadingIndicatorView
+                                android:id="@+id/avi_load_file"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_gravity="center"
+                                android:visibility="gone"
+                                app:indicatorColor="@color/techer_orange"
+                                app:indicatorName="LineSpinFadeLoaderIndicator" />
+
+                        </FrameLayout>
+
+                        <TextView
+                            android:id="@+id/tv_lbl_upload_pics"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:text="Upload your photos and video"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rv_image_video_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="75dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/orange_stoke_white_background"
+                            android:visibility="gone"
+                            android:layoutDirection="rtl"
+                            android:paddingTop="5dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="5dp"></android.support.v7.widget.RecyclerView>
+
+
+                    </LinearLayout>
+
+
+
+                </FrameLayout>
+
+
+                <CheckBox
+                    android:id="@+id/ch_remark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/techer_orange"
+                    android:text="ASK FOR OPINION"
+                    android:gravity="right|center_vertical"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black" />
+
+
+                <TextView
+                    android:id="@+id/btn_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/radius_with_orange_background"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Submit"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="150dp"
+            android:layout_gravity="bottom"
+            android:src="@drawable/ic_login_left" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="150dp"
+            android:layout_gravity="bottom|right"
+            android:src="@drawable/ic_login_right" />
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

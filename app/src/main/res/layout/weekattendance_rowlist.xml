@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:background="@color/white"
+
+    android:paddingRight="10dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_present"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+
+            >
+
+            <com.leadinfosoft.littleland.widget.MyTextView
+                android:id="@+id/tv_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="09-07"
+                android:textColor="@color/green"
+                android:textSize="@dimen/week_name_date_text_10sp" />
+
+            <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                android:id="@+id/tv_day"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:singleLine="true"
+                android:text="wendanday"
+                android:textAllCaps="true"
+                android:textColor="@color/dark_gray_text"
+                android:textSize="@dimen/week_name_day_text_12sp" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_divedline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="8dp"
+            android:layout_toRightOf="@+id/ll_date">
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center"
+                android:background="#DEE7D6" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_week_dot" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_attend"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/Week_attand_heth"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/fl_divedline"
+            android:background="@drawable/weekattend_present_bg">
+
+            <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                android:id="@+id/tv_status"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/iv_status"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:text="PRESENT"
+                android:textAllCaps="true"
+                android:textColor="@color/dark_gray_text"
+                android:textSize="@dimen/week_attend_text_12sp" />
+
+            <ImageView
+                android:id="@+id/iv_status"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/check" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_arrow"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="-8dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@+id/fl_divedline"
+            android:src="@drawable/ic_present_arrow" />
+
+        <RelativeLayout
+            android:id="@+id/rl_notes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_attend"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/fl_divedline"
+            android:background="@drawable/weekattend_present_bg">
+
+            <com.leadinfosoft.littleland.widget.MyTextView
+                android:id="@+id/tv_remark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="top|left"
+                android:maxLines="4"
+                android:minLines="4"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:text="Remark area"
+                android:textAllCaps="true"
+                android:textColor="@color/dark_gray_text"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_absent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_absent_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+
+            >
+
+            <com.leadinfosoft.littleland.widget.MyTextView
+                android:id="@+id/tv_absent_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="09-07"
+                android:textColor="@color/green"
+                android:textSize="@dimen/week_name_date_text_10sp" />
+
+            <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                android:id="@+id/tv_absent_day"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:singleLine="true"
+                android:text="wendanday"
+                android:textAllCaps="true"
+                android:textColor="@color/dark_gray_text"
+                android:textSize="@dimen/week_name_day_text_12sp" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_absent_divedline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="8dp"
+            android:layout_toRightOf="@+id/ll_absent_date">
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center"
+                android:background="#DEE7D6" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_week_dot" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_absent_attend"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/Week_attand_heth"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/fl_absent_divedline"
+            android:background="@color/weekend_absent_color">
+
+            <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                android:id="@+id/tv_absent_status"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/iv_absent_status"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:text="ABSENT"
+                android:textAllCaps="true"
+                android:textColor="@color/dark_gray_text"
+                android:textSize="@dimen/week_attend_text_12sp" />
+
+            <ImageView
+                android:id="@+id/iv_absent_status"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/cancel" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_absent_arrow"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="-8dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@+id/fl_absent_divedline"
+            android:src="@drawable/ic_absent_arrow" />
+
+        <RelativeLayout
+            android:id="@+id/rl_absent_notes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_absent_attend"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/fl_absent_divedline"
+            android:background="@color/weekend_absent_color">
+
+            <com.leadinfosoft.littleland.widget.MyTextView
+                android:id="@+id/tv_absent_remark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="top|left"
+                android:maxLines="4"
+                android:minLines="4"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:text="Remark area"
+                android:textAllCaps="true"
+                android:textColor="@color/dark_gray_text"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

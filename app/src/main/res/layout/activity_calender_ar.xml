@@ -1,0 +1,147 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:calendarNS="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:padding="5dp"
+                android:src="@drawable/back_arrow" />
+
+            <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/iv_bell"
+                android:layout_toRightOf="@+id/iv_back"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="Monthly Calendar"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/toolbar_header_text_14sp" />
+
+            <com.leadinfosoft.littleland.widget.MyTextView
+                android:id="@+id/tv_subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_title"
+                android:layout_toLeftOf="@+id/iv_bell"
+                android:layout_toRightOf="@+id/iv_back"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="Class Twin Toe"
+                android:textAllCaps="true"
+                android:textColor="#62AF51"
+                android:textSize="@dimen/toolbar_sub_header_text_10sp" />
+
+
+            <ImageView
+                android:id="@+id/iv_bell"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="5dp"
+                android:src="@drawable/bell"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutDirection="rtl"
+        android:orientation="vertical">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#EBEBEB"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <com.leadinfosoft.littleland.widget.CalendarView
+
+                        android:id="@+id/calendar_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="290dp"
+                        android:visibility="visible" />
+
+                    <!--calendarNS:dateFormat="MMMM yyyy"-->
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_event"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:visibility="visible">
+
+                    </android.support.v7.widget.RecyclerView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_loder"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:visibility="visible">
+
+                    <com.wang.avi.AVLoadingIndicatorView
+                        android:id="@+id/avi_loader"
+                        style="@style/AVLoadingIndicatorView.Large"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:visibility="visible"
+                        app:indicatorColor="@color/loader_color"
+                        app:indicatorName="BallRotateIndicator" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </android.support.v4.widget.NestedScrollView>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

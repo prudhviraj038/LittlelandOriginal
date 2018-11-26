@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+
+    tools:context="com.leadinfosoft.littleland.activity.DailyAttendance">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+
+        android:paddingTop="5dp"
+        app:contentInsetStart="0dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/toolbar_bg"
+           >
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:padding="5dp"
+                android:src="@drawable/back_arrow" />
+
+            <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tv_subtitle"
+                android:layout_toLeftOf="@+id/iv_bell"
+                android:layout_toRightOf="@+id/iv_back"
+                android:layout_marginBottom="2dp"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:singleLine="true"
+                android:text="Daily attendence"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/toolbar_header_text_14sp" />
+
+            <com.leadinfosoft.littleland.widget.MyTextView
+                android:id="@+id/tv_subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+id/iv_bell"
+                android:layout_toRightOf="@+id/iv_back"
+                android:layout_marginBottom="12dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text=""
+                android:textAllCaps="true"
+                android:textColor="#598427"
+                android:textSize="@dimen/toolbar_sub_header_text_10sp" />
+
+
+            <ImageView
+                android:id="@+id/iv_bell"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="5dp"
+                android:visibility="invisible"
+
+                android:src="@drawable/bell" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_daily_attend"
+        android:layout_width="match_parent"
+        android:layoutDirection="rtl"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+
+    android:paddingBottom="10dp">
+
+
+    <com.github.siyamed.shapeimageview.RoundedImageView
+        android:id="@+id/iv_image"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/baby"
+        app:siRadius="8dp"
+        app:siBorderWidth="4dp"
+        app:siBorderColor="@color/image_boder"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/viewpost_title_heth"
+        android:background="@drawable/viewpost_white_trasn_bg"
+        android:layout_gravity="bottom"
+        android:paddingRight="15dp">
+
+        <com.leadinfosoft.littleland.widget.MyHeaderTextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/tv_time_date"
+            android:text="abcdefg hgsjsgd fdsf"
+            android:textColor="@color/dark_gray_text"
+            android:textAllCaps="true"
+            android:textSize="@dimen/viewpost_title_12sp"
+            android:singleLine="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"/>
+
+        <com.leadinfosoft.littleland.widget.MyTextView
+            android:id="@+id/tv_time_date"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textAllCaps="true"
+            android:textSize="@dimen/viewpost_time_date_10sp"
+            android:text="12:45 pm  16-06-2017"
+            android:textColor="@color/black"
+            android:layout_alignParentRight="true"
+            />
+
+        
+    </RelativeLayout>
+</FrameLayout>

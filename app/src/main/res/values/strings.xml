@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">LittleLand</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="cal_jan">January</string>
+    <string name="cal_feb">February</string>
+    <string name="cal_mar">March</string>
+    <string name="cal_apr">April</string>
+    <string name="cal_may">May</string>
+    <string name="cal_june">June</string>
+    <string name="cal_july">July</string>
+    <string name="cal_aug">August</string>
+    <string name="cal_sep">September</string>
+    <string name="cal_oct">October</string>
+    <string name="cal_nov">November</string>
+    <string name="cal_dec">December</string>
+
+    <string name="cal_jan_ar">كانون الثاني</string>
+    <string name="cal_feb_ar">شهر فبراير</string>
+    <string name="cal_mar_ar">مارس</string>
+    <string name="cal_apr_ar">أبريل</string>
+    <string name="cal_may_ar">قد</string>
+    <string name="cal_june_ar">يونيو</string>
+    <string name="cal_july_ar">يوليو</string>
+    <string name="cal_aug_ar">أغسطس</string>
+    <string name="cal_sep_ar">سبتمبر</string>
+    <string name="cal_oct_ar">شهر اكتوبر</string>
+    <string name="cal_nov_ar">شهر نوفمبر</string>
+    <string name="cal_dec_ar">ديسمبر</string>
+
+    <string name="sun_ar">شمس</string>
+    <string name="mon_ar">مون</string>
+    <string name="tue_ar">ثلاثاء</string>
+    <string name="wed_ar">تزوج</string>
+    <string name="thu_ar">خميس</string>
+    <string name="fri_ar">جمعة</string>
+    <string name="sat_ar">جلسنا</string>
+
+    <string name="sun">SUN</string>
+    <string name="mon">MON</string>
+    <string name="tue">TUE</string>
+    <string name="wed">WED</string>
+    <string name="thu">THU</string>
+    <string name="fri">FRI</string>
+    <string name="sat">SAT</string>
+
+    <string name="navigation_drawer_open">Drawer open</string>
+    <string name="navigation_drawer_close">Drawer close</string>
+
+    <string-array name="test_array">
+        <item>one</item>
+        <item>two</item>
+        <item>three</item>
+        <item>four</item>
+        <item>five</item>
+        <item>six</item>
+        <item>seven</item>
+        <item>eight</item>
+        <item>one</item>
+        <item>two</item>
+        <item>three</item>
+        <item>four</item>
+        <item>five</item>
+        <item>six</item>
+        <item>seven</item>
+        <item>eight</item>
+        <item>one</item>
+        <item>two</item>
+        <item>three</item>
+        <item>four</item>
+        <item>five</item>
+        <item>six</item>
+        <item>seven</item>
+        <item>eight</item>
+        <item>one</item>
+        <item>two</item>
+        <item>three</item>
+        <item>four</item>
+        <item>five</item>
+        <item>six</item>
+        <item>seven</item>
+        <item>eight</item>
+
+    </string-array>
+
+
+</resources>

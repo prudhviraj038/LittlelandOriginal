@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+
+    tools:context="com.leadinfosoft.littleland.activity.MonthlyAttendanceActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:padding="5dp"
+                android:src="@drawable/back_arrow" />
+
+            <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/iv_bell"
+                android:layout_toRightOf="@+id/iv_back"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:singleLine="true"
+                android:text=""
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/toolbar_header_text_14sp" />
+
+            <com.leadinfosoft.littleland.widget.MyTextView
+                android:id="@+id/tv_subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_title"
+                android:layout_toLeftOf="@+id/iv_bell"
+                android:layout_toRightOf="@+id/iv_back"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text=""
+                android:textAllCaps="true"
+                android:textColor="#598427"
+                android:textSize="@dimen/toolbar_sub_header_text_10sp" />
+
+
+            <ImageView
+                android:id="@+id/iv_bell"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="5dp"
+                android:visibility="invisible"
+                android:src="@drawable/bell" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/ll_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/celender_month"
+                android:layout_alignParentBottom="true"/>
+
+            <HorizontalScrollView
+                android:id="@+id/hsv_month"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp">
+                        <LinearLayout
+                            android:id="@+id/ll_horizon_scroll"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:orientation="horizontal">
+
+
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </HorizontalScrollView>
+        </FrameLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_monthly"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-5dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_loder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@color/white"
+        android:visibility="gone"
+        >
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/avi_loader"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            style="@style/AVLoadingIndicatorView.Large"
+            android:visibility="visible"
+            app:indicatorName="BallRotateIndicator"
+            app:indicatorColor="@color/loader_color"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

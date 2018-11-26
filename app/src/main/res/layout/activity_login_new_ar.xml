@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+
+    tools:context="com.leadinfosoft.littleland.activity.LoginActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_withlogo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/toolbar_bg"
+        android:visibility="visible">
+
+        <!--<ImageView
+            android:id="@+id/iv_menu"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:src="@drawable/menu"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"/>-->
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:src="@drawable/back_arrow" />
+
+        <ImageView
+            android:id="@+id/iv_orange"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="17dp"
+            android:padding="5dp"
+            android:src="@drawable/orange_circle" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/iv_bell"
+            android:layout_toRightOf="@+id/iv_menu"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="5dp"
+            android:src="@drawable/app_name" />
+
+
+        <!--<ImageView
+            android:id="@+id/iv_bell"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:src="@drawable/bell"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>-->
+
+        <ImageView
+            android:id="@+id/iv_star"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:padding="5dp"
+            android:src="@drawable/star" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="275dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp">
+
+                    <ImageView
+                        android:id="@+id/iv_baby_image"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/baby" />
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:layout_marginTop="175dp"
+                        android:scaleType="fitXY"
+
+                        android:src="@drawable/login_bg_new_white_background_bottom" />
+
+
+                </FrameLayout>
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginTop="195dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/teacher_login" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <com.leadinfosoft.littleland.widget.MyEditText
+                    android:id="@+id/et_techid"
+                    android:layout_width="@dimen/login_editxt_wdth"
+                    android:layout_height="@dimen/login_editxt_heth"
+                    android:layout_above="@+id/et_pass"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/login_editxt_marg_bot"
+                    android:background="@drawable/login_org_round_boder"
+                    android:gravity="center"
+                    android:hint="TEACHER ID"
+                    android:paddingLeft="@dimen/login_editxt_pend_left"
+                    android:paddingRight="@dimen/login_editxt_pend_right"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/login_forg_text"
+                    android:textSize="@dimen/login_other_txt" />
+
+                <com.leadinfosoft.littleland.widget.MyEditText
+                    android:id="@+id/et_pass"
+                    android:layout_width="@dimen/login_editxt_wdth"
+                    android:layout_height="@dimen/login_editxt_heth"
+                    android:layout_above="@+id/ll_signin"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/login_org_round_boder"
+                    android:gravity="center"
+                    android:hint="PASSWORD"
+                    android:paddingLeft="@dimen/login_editxt_pend_left"
+                    android:paddingRight="@dimen/login_editxt_pend_right"
+                    android:password="true"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/login_forg_text"
+                    android:textSize="@dimen/login_other_txt" />
+
+                <LinearLayout
+                    android:id="@+id/ll_signin"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="34dp"
+                        android:layout_height="75dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_gravity="bottom"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_login_left" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|center"
+                        android:orientation="vertical">
+
+                        <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                            android:id="@+id/tv_signin"
+                            android:layout_width="@dimen/login_editxt_wdth"
+                            android:layout_height="@dimen/login_editxt_heth"
+                            android:layout_above="@+id/tv_forgot"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/login_org_round_bg"
+                            android:gravity="center"
+                            android:text="Sign in"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/login_other_txt" />
+
+
+                        <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                            android:id="@+id/tv_forgot"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/tv_admin"
+                            android:layout_marginBottom="@dimen/login_forgot_marg_bot"
+                            android:gravity="center"
+                            android:text="Forgot PassWord?"
+                            android:textAllCaps="true"
+                            android:textColor="@color/login_forg_text"
+                            android:textSize="@dimen/login_admin" />
+
+                        <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                            android:id="@+id/tv_admin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="@dimen/login_admin_marg_bot"
+                            android:gravity="center"
+                            android:text="Please Contact Administration"
+                            android:textAllCaps="true"
+                            android:textColor="@color/login_forg_text"
+                            android:textSize="@dimen/login_admin" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="34dp"
+                        android:layout_height="75dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="bottom"
+                        android:scaleType="centerInside"
+
+                        android:src="@drawable/ic_login_right" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "895280227952",
+    "firebase_url": "https://littleland-18523.firebaseio.com",
+    "project_id": "littleland-18523",
+    "storage_bucket": "littleland-18523.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:895280227952:android:de4b02b16a189900",
+        "android_client_info": {
+          "package_name": "com.leadinfosoft.littleland"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "895280227952-iobeufer74kbispjeqnlidvjk4t577to.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5ADXg0fU7dyT0Aer7G6W6quQX-OOm5no"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

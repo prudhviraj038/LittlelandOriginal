@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    android:orientation="vertical">
+
+    <include layout="@layout/custome_toolbar"></include>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <LinearLayout
+                android:id="@+id/ll_agree"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:visibility="visible"
+                android:background="@drawable/radius_with_purple_stoke"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_agree"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/purple_background_with_radius"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Agree"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_disagree"
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="DISAgree"
+
+                    android:textAllCaps="true"
+                    android:textColor="@color/gray_text"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_disagree"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:visibility="gone"
+                android:background="@drawable/radius_with_purple_stoke"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_lldis_agree"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Agree"
+                    android:textAllCaps="true"
+                    android:textColor="@color/gray_text"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_lldis_disagree"
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="DISAgree"
+                    android:background="@drawable/purple_background_with_radius"
+
+
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+        <EditText
+            android:id="@+id/et_remark"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/radius_with_purple_stoke"
+            android:capitalize="characters"
+            android:gravity="top"
+            android:hint="Enter Remark"
+            android:lines="4"
+            android:maxLines="4"
+            android:minLines="4"
+            android:padding="10dp"
+            android:textColor="@color/black"
+
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_submit"
+
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/purple_background_with_radius"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="SUBmit"
+
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

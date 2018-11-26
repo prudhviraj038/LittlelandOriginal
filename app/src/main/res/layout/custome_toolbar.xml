@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/custom_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/toolbar_bg"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_withlogo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_orang"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/orange_circle"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/iv_menu"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:padding="5dp"
+                android:src="@drawable/menu" />
+
+
+            <ImageView
+                android:id="@+id/iv_applogo"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/iv_bell"
+                android:layout_toRightOf="@+id/iv_menu"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="5dp"
+                android:src="@drawable/app_name"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:id="@+id/rl_spiner"
+                android:layout_width="160dp"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/login_org_round_boder"
+                android:visibility="visible">
+
+                <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                    android:id="@+id/tv_select_class"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/tv_arrow"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="5dp"
+                    android:singleLine="true"
+                    android:text="Select Class"
+                    android:textAllCaps="true"
+                    android:textColor="@color/dark_gray_text"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/tv_arrow"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/techer_post_arrow" />
+            </RelativeLayout>
+
+
+            <ImageView
+                android:id="@+id/iv_star"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="25dp"
+                android:src="@drawable/star"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/iv_bell"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="5dp"
+                android:src="@drawable/bell" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_withtitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:padding="5dp"
+                android:src="@drawable/back_arrow" />
+
+            <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:layout_toLeftOf="@+id/fl_right_position_arrow"
+                android:layout_toRightOf="@+id/iv_back"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:singleLine="true"
+                android:text="sdasdasdasd"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <com.leadinfosoft.littleland.widget.MyTextView
+                android:id="@+id/tv_subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_title"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:layout_toLeftOf="@+id/fl_right_position_arrow"
+                android:layout_toRightOf="@+id/iv_back"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="class-twinkle toe"
+                android:textAllCaps="true"
+                android:textColor="#8A6294"
+                android:textSize="@dimen/toolbar_sub_header_text_10sp" />
+
+
+            <FrameLayout
+                android:id="@+id/fl_right_position_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+
+
+                <ImageView
+                    android:id="@+id/iv_bell1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:src="@drawable/bell" />
+
+                <ImageView
+                    android:id="@+id/iv_add"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_add"
+                    android:visibility="gone" />
+
+                <com.github.siyamed.shapeimageview.CircularImageView
+                    android:id="@+id/iv_profile_pic"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:scaleType="centerCrop"
+                    app:siBorderColor="@color/green"
+                    app:siBorderWidth="1dp"
+                    android:visibility="gone" />
+
+            </FrameLayout>
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+</LinearLayout>

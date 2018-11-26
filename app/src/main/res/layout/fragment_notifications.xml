@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/lv_notifications"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:divider="@null"></ListView>
+
+            <TextView
+                android:id="@+id/tv_no_notifications"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:visibility="gone"
+                android:textColor="@color/black"
+                android:text="No Notifications"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+    android:paddingLeft="10dp"
+    android:background="@color/white"
+
+    android:paddingRight="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <com.leadinfosoft.littleland.widget.MyTextView
+                android:id="@+id/tv_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="2017"
+                android:textColor="@color/green"
+                android:gravity="right"
+                android:textSize="@dimen/mont_year_text"
+                android:visibility="visible" />
+
+            <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                android:id="@+id/tv_month"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:singleLine="true"
+                android:text="November"
+                android:gravity="right"
+
+
+                android:textAllCaps="true"
+                android:textColor="@color/dark_gray_text"
+                android:textSize="@dimen/mont_day_text" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_divedline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="8dp"
+            android:layout_toLeftOf="@+id/ll_date">
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:background="#DEE7D6" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_marginTop="35dp"
+                android:src="@drawable/ic_week_dot" />
+        </FrameLayout>
+
+        <!--<RelativeLayout
+            android:id="@+id/rl_attend"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@+id/fl_divedline"
+            >
+    <ImageView
+        android:id="@+id/iv_check"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/check"/>
+            <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                android:id="@+id/tv_present"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:text="21 days "
+                android:singleLine="true"
+                android:textAllCaps="true"
+                android:layout_toRightOf="@+id/iv_check"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:textSize="20dp"
+                android:textColor="@color/dark_gray_text"/>
+
+            <ImageView
+                android:id="@+id/iv_cancel"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/check"
+                android:layout_toLeftOf="@+id/tv_absent"
+                android:layout_toRightOf="@+id/tv_present"/>
+
+
+            <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                android:id="@+id/tv_absent"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:text="21 days "
+                android:singleLine="true"
+                android:textAllCaps="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:textSize="20dp"
+                android:textColor="@color/dark_gray_text"/>
+
+        </RelativeLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_toLeftOf="@+id/fl_divedline"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/iv_check"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="0.15"
+                android:src="@drawable/check" />
+
+            <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                android:id="@+id/tv_present"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/iv_check"
+                android:layout_weight="0.35"
+
+                android:gravity="center_vertical|right"
+                android:singleLine="true"
+                android:text="21 days "
+                android:textAllCaps="true"
+                android:textColor="@color/dark_gray_text"
+                android:textSize="@dimen/mont_attp_day_text" />
+
+            <ImageView
+                android:id="@+id/iv_cancel"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="0.15"
+                android:src="@drawable/cancel" />
+
+            <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                android:id="@+id/tv_absent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+
+                android:layout_weight="0.35"
+                android:gravity="center_vertical|right"
+                android:singleLine="true"
+                android:text="21 days "
+                android:textAllCaps="true"
+                android:textColor="@color/dark_gray_text"
+                android:textSize="@dimen/mont_attp_day_text" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

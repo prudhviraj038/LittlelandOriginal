@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_root"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:id="@+id/iv_profile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/baby"
+            app:siBorderColor="@color/green"
+            android:layout_alignParentRight="true"
+            app:siBorderWidth="2dp"/>
+
+        <com.leadinfosoft.littleland.widget.MyHeaderTextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="shdasgdhasgdhja"
+            android:textSize="12sp"
+            android:textAllCaps="true"
+            android:gravity="right"
+            android:layout_marginLeft="110dp"
+            android:layout_toLeftOf="@+id/iv_profile"
+            android:layout_centerVertical="true"/>
+
+        <com.leadinfosoft.littleland.widget.MyHeaderTextView
+            android:id="@+id/tv_present_status"
+            android:layout_width="110dp"
+            android:layout_height="25dp"
+            android:textColor="@color/daily_present"
+            android:text="حاضر"
+            android:textSize="10sp"
+            android:paddingRight="10dp"
+            android:textAllCaps="true"
+            android:gravity="center|center_vertical"
+            android:background="@drawable/present"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:visibility="visible"/>
+
+        <com.leadinfosoft.littleland.widget.MyHeaderTextView
+            android:id="@+id/tv_absent_status"
+            android:layout_width="110dp"
+            android:layout_height="25dp"
+            android:textColor="@color/daily_absent"
+            android:text="غائب"
+            android:textSize="10sp"
+            android:paddingLeft="10dp"
+            android:textAllCaps="true"
+            android:gravity="center|center_vertical"
+            android:background="@drawable/absent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            />
+
+        <RelativeLayout
+            android:id="@+id/rl_atten"
+            android:layout_width="110dp"
+            android:layout_height="25dp"
+            android:background="@drawable/attendance"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone">
+
+            <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                android:id="@+id/tv_present"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="حاضر"
+                android:textSize="8sp"
+                android:textAllCaps="true"
+                android:gravity="center"
+                android:textColor="@color/daily_present"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"/>
+
+            <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                android:id="@+id/tv_absent"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="غائب"
+                android:textSize="8sp"
+                android:textColor="@color/daily_absent"
+                android:textAllCaps="true"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"/>
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+
+    tools:context="com.leadinfosoft.littleland.activity.FirstActivity">
+   <!-- <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:contentInsetStart="0dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:background="@drawable/toolbar_bg">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:id="@+id/iv_menu"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:src="@drawable/menu"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="5dp"
+                android:layout_toLeftOf="@+id/iv_bell"
+                android:layout_toRightOf="@+id/iv_menu"
+                android:layout_centerVertical="true"
+                android:src="@drawable/app_name"/>
+
+            <ImageView
+                android:id="@+id/iv_bell"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:src="@drawable/bell"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>-->
+
+
+    <RelativeLayout
+        android:id="@+id/rl_withlogo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="visible">
+
+        <!--<ImageView
+            android:id="@+id/iv_menu"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:src="@drawable/menu"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"/>-->
+
+        <ImageView
+            android:id="@+id/iv_orange"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="17dp"
+            android:padding="5dp"
+            android:src="@drawable/orange_circle" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/iv_bell"
+            android:layout_toRightOf="@+id/iv_menu"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="5dp"
+            android:src="@drawable/app_name" />
+
+
+        <!--<ImageView
+            android:id="@+id/iv_bell"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:src="@drawable/bell"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>-->
+
+        <ImageView
+            android:id="@+id/iv_star"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:padding="5dp"
+            android:src="@drawable/star" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:layout_below="@+id/rl_withlogo"
+        >
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_marginBottom="60dp">
+
+            <ImageView
+                android:id="@+id/iv_slider_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/baby" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:layout_alignParentTop="true" />
+
+
+        </FrameLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_view_heth"
+            android:background="#99c3e4eb" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@drawable/main_arc_bg"
+            android:layout_alignParentBottom="true"/>
+
+        <ImageView
+            android:id="@+id/iv_teacher"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_above="@+id/tv_techer"
+            android:layout_marginRight="@dimen/firstpage_margin"
+            android:src="@drawable/teacher_login"
+            android:background="@drawable/white_trasp_bg"/>
+
+        <com.leadinfosoft.littleland.widget.MyHeaderTextView
+            android:id="@+id/tv_techer"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="معلمون"
+            android:layout_alignParentRight="true"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginRight="@dimen/firstpage_margin"
+            android:singleLine="true"
+
+            android:layout_above="@+id/tv_techtxt"
+            />
+        <com.leadinfosoft.littleland.widget.MyHeaderTextView
+            android:id="@+id/tv_techtxt"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/firstpage_margin"
+
+            android:text="تسجيل الدخول هنا"
+            android:layout_marginBottom="20dp"
+            android:singleLine="true"
+
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:textAllCaps="true"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:textColor="@color/login_text"
+            />
+
+        <ImageView
+            android:id="@+id/iv_parent"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/firstpage_margin"
+            android:layout_above="@+id/tv_parent"
+            android:src="@drawable/pareents_login"
+            android:background="@drawable/white_trasp_bg"/>
+
+        <com.leadinfosoft.littleland.widget.MyHeaderTextView
+            android:id="@+id/tv_parent"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="الآباء"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/firstpage_margin"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:singleLine="true"
+
+            android:textSize="18sp"
+
+            android:layout_above="@+id/tv_techtxt"
+            />
+        <com.leadinfosoft.littleland.widget.MyHeaderTextView
+            android:id="@+id/tv_parenttxt"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/firstpage_margin"
+
+            android:text="تسجيل الدخول هنا"
+            android:layout_marginBottom="20dp"
+            android:singleLine="true"
+
+            android:layout_alignParentBottom="true"
+            android:textAllCaps="true"
+            android:textSize="10sp"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:textColor="@color/login_text"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,151 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.leadinfosoft.littleland.fragment.Home">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+
+        android:src="@drawable/ic_login_left"/>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_login_right"/>
+
+   <!--<ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:scrollbars="none">-->
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+          >
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+        >
+
+    </android.support.v4.view.ViewPager>
+
+
+       <RelativeLayout
+            android:id="@+id/rl_calender"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/home_round_50dp"
+            android:layout_above="@+id/rl_attend"
+            android:layout_marginLeft="@dimen/home_round_margin"
+            android:layout_marginRight="@dimen/home_round_margin"
+            android:layout_marginBottom="10dp"
+
+            android:background="@drawable/froi_round_bg">
+
+            <ImageView
+                android:id="@+id/iv_calender"
+                android:layout_width="@dimen/home_image_width"
+                android:layout_height="@dimen/home_image_heigth"
+                android:src="@drawable/celender"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/home_image_mag"/>
+
+            <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/iv_calender"
+                android:paddingRight="8dp"
+                android:paddingLeft="8dp"
+                android:text="View Calender"
+                android:singleLine="true"
+
+                android:gravity="left|center_vertical"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/home_tab_14sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_attend"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/home_round_50dp"
+            android:layout_above="@+id/rl_msg"
+            android:layout_marginLeft="@dimen/home_round_margin"
+            android:layout_marginRight="@dimen/home_round_margin"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/green_round_bg">
+
+            <ImageView
+                android:id="@+id/iv_attend"
+                android:layout_width="@dimen/home_image_width"
+                android:layout_height="@dimen/home_image_width"
+                android:src="@drawable/ped"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/home_image_mag"/>
+
+            <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/iv_attend"
+                android:paddingRight="8dp"
+                android:paddingLeft="8dp"
+                android:text="Attendance report"
+                android:singleLine="true"
+                android:gravity="left|center_vertical"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/home_tab_14sp"/>
+
+        </RelativeLayout>
+
+   <RelativeLayout
+       android:id="@+id/rl_msg"
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/home_round_50dp"
+       android:layout_alignParentBottom="true"
+       android:layout_marginLeft="@dimen/home_round_margin"
+       android:layout_marginRight="@dimen/home_round_margin"
+       android:layout_marginBottom="20dp"
+       android:background="@drawable/orange_round_bg">
+
+       <ImageView
+           android:id="@+id/iv_msg"
+           android:layout_width="@dimen/home_image_width"
+           android:layout_height="@dimen/home_image_width"
+           android:src="@drawable/mail"
+           android:layout_centerVertical="true"
+           android:layout_marginLeft="@dimen/home_image_mag"/>
+
+       <com.leadinfosoft.littleland.widget.MyHeaderTextView
+            android:id="@+id/tv_msg"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_toRightOf="@+id/iv_msg"
+           android:paddingRight="8dp"
+           android:paddingLeft="8dp"
+           android:text="Direct messeage"
+           android:singleLine="true"
+           android:gravity="left|center_vertical"
+           android:textAllCaps="true"
+           android:textColor="@color/white"
+           android:textSize="@dimen/home_tab_14sp"/>
+
+   </RelativeLayout>
+
+       </LinearLayout>
+   <!--</ScrollView>-->
+
+</RelativeLayout>

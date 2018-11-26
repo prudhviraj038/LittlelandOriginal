@@ -1,0 +1,1558 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.leadinfosoft.littleland.fragment.Teacher">
+
+    <ImageView
+        android:id="@+id/iv_star_blue"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/iv_round_green"
+        android:padding="5dp"
+        android:src="@drawable/ic_star_blue" />
+
+    <ImageView
+        android:id="@+id/iv_round_purple_right"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/iv_round_green"
+        android:layout_alignParentRight="true"
+        android:padding="5dp"
+        android:src="@drawable/ic_round_purple" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/home_screen_calender_background_image" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_curentdate"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="40dp"
+                        android:background="@drawable/calender_white_round_bg">
+
+                        <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                            android:id="@+id/tv_day"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/tv_month"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:singleLine="true"
+                            android:text="23"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/techer_cureent_day" />
+
+                        <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                            android:id="@+id/tv_month"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="25dp"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:singleLine="true"
+                            android:text="desember"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/techer_cureent_month" />
+
+                    </RelativeLayout>
+
+                    <com.github.sundeepk.compactcalendarview.CompactCalendarView
+
+                        android:id="@+id/compactcalendar_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/rl_curentdate"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        app:compactCalendarBackgroundColor="@android:color/transparent"
+                        app:compactCalendarCurrentDayBackgroundColor="@android:color/transparent"
+                        app:compactCalendarCurrentDayTextColor="#3223b9"
+                        app:compactCalendarCurrentSelectedDayBackgroundColor="#FFFFFF"
+                        app:compactCalendarCurrentSelectedDayTextColor="#D56750"
+                        app:compactCalendarMultiEventIndicatorColor="#cbd428e4"
+                        app:compactCalendarTargetHeight="200dp"
+                        app:compactCalendarTextColor="#fff"
+
+                        app:compactCalendarTextSize="11sp" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_teacher"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="205dp"
+                    android:background="@drawable/teacher_white_main_round_bg"
+                    android:paddingBottom="30dp"
+                    android:visibility="visible">
+
+                    <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="10dp"
+                        android:paddingRight="10dp"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textAllCaps="true"
+                        android:textColor="@color/techer_gray"
+                        android:textSize="12sp" />
+
+                    <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                        android:id="@+id/tv_educ"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_name"
+                        android:layout_marginLeft="100dp"
+                        android:paddingRight="10dp"
+                        android:text=""
+                        android:textAllCaps="true"
+                        android:singleLine="true"
+
+                        android:textColor="@color/techer_orange"
+                        android:textSize="10sp" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_teacher_manage_post"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/tv_educ">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginTop="10dp"
+                            android:visibility="visible"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/ll_teacher_manage_post"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/gallery" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:orientation="vertical">
+
+                                    <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                                        android:id="@+id/tv_teacher_manage_post"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="MANAGE POST"
+                                        android:textAllCaps="true"
+                                        android:textSize="12sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="2dp"
+                                        android:orientation="horizontal">
+
+                                        <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                                            android:id="@+id/tv_teacher_lbl_manage_post"
+
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:singleLine="true"
+                                            android:text="YOU CAN send post to direct parents or group"
+                                            android:textAllCaps="true"
+                                            android:textColor="@color/techer_orange"
+                                            android:textSize="8sp" />
+
+                                        <ImageView
+                                            android:id="@+id/iv_teacher_manage_arrow"
+                                            android:layout_width="10dp"
+                                            android:layout_height="10dp"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_below="@+id/tv_attend_main"
+                                            android:layout_marginRight="@dimen/tech_arrow_mrg"
+                                            android:src="@drawable/orange_right"
+
+                                            />
+
+
+                                    </LinearLayout>
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginTop="4dp"
+                                        android:background="@color/techer_view_line"></View>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_teacher_manage_sub_post"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:id="@+id/ll_teacher_new_Post"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="25dp"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:padding="5dp">
+
+                                    <ImageView
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:src="@drawable/new_post" />
+
+                                    <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                                        android:id="@+id/tv_teacher_manage_post_new_post"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:text="New post"
+                                        android:textAllCaps="true"
+                                        android:textColor="@color/techer_gray"
+                                        android:textSize="12sp" />
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/ll_teacher_view_post"
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="25dp"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:padding="5dp">
+
+                                    <ImageView
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:src="@drawable/view_post" />
+
+                                    <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                                        android:id="@+id/tv_teacher_manage_post_view_post"
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:text="view post"
+                                        android:textAllCaps="true"
+                                        android:textColor="@color/techer_gray"
+                                        android:textSize="12sp" />
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/rl_teacher_manage_post"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@color/techer_view_line"></View>
+
+
+                    <RelativeLayout
+                        android:id="@+id/rl_teacher_attend"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_teacher_manage_post">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/ll_teacher_manage_attendence_parent"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+
+                                <ImageView
+                                    android:id="@+id/imageView"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/techer_attend_check" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:orientation="vertical">
+
+                                    <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                                        android:id="@+id/tv_teacher_attandence"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Attendance"
+                                        android:textAllCaps="true"
+                                        android:textSize="12sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="2dp"
+                                        android:orientation="horizontal">
+
+                                        <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                                            android:id="@+id/tv_teacher_lbl_attandence"
+
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:singleLine="true"
+                                            android:text="Student Attendance Report"
+                                            android:textAllCaps="true"
+                                            android:textColor="@color/parpal_subtitle"
+                                            android:textSize="8sp" />
+
+                                        <ImageView
+                                            android:id="@+id/iv_teacher_attandence_arrow"
+
+                                            android:layout_width="10dp"
+                                            android:layout_height="10dp"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_below="@+id/tv_attend_main"
+                                            android:layout_marginRight="@dimen/tech_arrow_mrg"
+                                            android:src="@drawable/purple_right"
+
+                                            />
+
+
+                                    </LinearLayout>
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginTop="4dp"
+                                        android:background="@color/techer_view_line"></View>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_teacher_manage_attendence_sub_post"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"
+
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:id="@+id/ll_teacher_take_attendence"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="25dp"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:padding="5dp">
+
+                                    <ImageView
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:src="@drawable/ic_take_attendance" />
+
+                                    <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                                        android:id="@+id/tv_teacher_attandence_take_attandence"
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:text="take attendence"
+                                        android:textAllCaps="true"
+                                        android:textColor="@color/techer_gray"
+                                        android:textSize="12sp" />
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/ll_teacher_view_monthly_report"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="25dp"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:padding="5dp">
+
+                                    <ImageView
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:src="@drawable/ic_attendance_report" />
+
+                                    <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                                        android:id="@+id/tv_teacher_attandence_view_monthly_report"
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:text="view monthly report"
+                                        android:textAllCaps="true"
+                                        android:textColor="@color/techer_gray"
+                                        android:textSize="12sp" />
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/ll_teacher_view_weekly_report"
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="25dp"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:padding="5dp">
+
+                                    <ImageView
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:src="@drawable/ic_attendance_report" />
+
+                                    <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                                        android:id="@+id/tv_teacher_attandence_view_weekly_report"
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:text="view weekly report"
+                                        android:textAllCaps="true"
+                                        android:textColor="@color/techer_gray"
+                                        android:textSize="12sp" />
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/rl_teacher_attend"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@color/techer_view_line"></View>
+
+
+                    <RelativeLayout
+                        android:id="@+id/rl_event_calender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_teacher_attend">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/ll_teacher_event_calender_parent"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/teacher_calender" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:orientation="vertical">
+
+                                    <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                                        android:id="@+id/tv_teacher_events"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Events"
+                                        android:textAllCaps="true"
+                                        android:textSize="12sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="2dp"
+                                        android:orientation="horizontal">
+
+                                        <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                                            android:id="@+id/tv_teacher_lbl_events"
+
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:singleLine="true"
+                                            android:text="Check Events For Little Land"
+                                            android:textAllCaps="true"
+                                            android:textColor="@color/green"
+                                            android:textSize="8sp" />
+
+                                        <ImageView
+                                            android:id="@+id/iv_teacher_events_arrow"
+
+                                            android:layout_width="10dp"
+                                            android:layout_height="10dp"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_below="@+id/tv_attend_main"
+                                            android:layout_marginRight="@dimen/tech_arrow_mrg"
+                                            android:src="@drawable/green_right"
+
+                                            />
+
+
+                                    </LinearLayout>
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginTop="4dp"
+                                        android:background="@color/techer_view_line"></View>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_teacher_event_calender_sub_post"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"
+
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:id="@+id/ll_teacher_view_calender"
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="25dp"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:padding="5dp">
+
+                                    <ImageView
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:src="@drawable/ic_view_calendar" />
+
+                                    <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                                        android:id="@+id/tv_teacher_events_view_calender"
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:text="view calendar"
+                                        android:textAllCaps="true"
+                                        android:textColor="@color/techer_gray"
+                                        android:textSize="12sp" />
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/rl_event_calender"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@color/techer_view_line"></View>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_teacher_direct_message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_below="@+id/rl_event_calender">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/ll_teacher_direct_message"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/ic_direct_message" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:orientation="vertical">
+
+                                    <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                                        android:id="@+id/tv_teacher_direct"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Direct"
+                                        android:textAllCaps="true"
+                                        android:textSize="12sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="2dp"
+                                        android:orientation="horizontal">
+
+                                        <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                                            android:id="@+id/tv_teacher_lbl_direct"
+
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:singleLine="true"
+                                            android:text="Send Direct Message"
+                                            android:textAllCaps="true"
+                                            android:textColor="@color/parpal_subtitle"
+                                            android:textSize="8sp" />
+
+                                        <ImageView
+                                            android:id="@+id/iv_teacher_direct_arrow"
+
+                                            android:layout_width="10dp"
+                                            android:layout_height="10dp"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_below="@+id/tv_attend_main"
+                                            android:layout_marginRight="@dimen/tech_arrow_mrg"
+                                            android:src="@drawable/purple_right"
+
+                                            />
+
+
+                                    </LinearLayout>
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginTop="4dp"
+                                        android:background="@color/techer_view_line"></View>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_teacher_direct_message_sub_post"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:id="@+id/ll_teacher_send_message"
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="25dp"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:padding="5dp">
+
+                                    <ImageView
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:src="@drawable/ic_send_direct_message" />
+
+                                    <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                                        android:id="@+id/tv_teacher_direct_send_message"
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:text="Send Message"
+                                        android:textAllCaps="true"
+                                        android:textColor="@color/techer_gray"
+                                        android:textSize="12sp" />
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/ll_teacher_conversations"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="25dp"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:padding="5dp">
+
+                                    <ImageView
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:src="@drawable/ic_conversation" />
+
+                                    <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                                        android:id="@+id/tv_teacher_direct_conversions"
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:text="Conversations"
+                                        android:textAllCaps="true"
+                                        android:textColor="@color/techer_gray"
+                                        android:textSize="12sp" />
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_parents"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="205dp"
+                    android:background="@drawable/teacher_white_main_round_bg"
+                    android:paddingBottom="30dp"
+                    android:visibility="gone">
+
+                    <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                        android:id="@+id/tv_parents_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="10dp"
+                        android:paddingRight="10dp"
+                        android:text=""
+                        android:singleLine="true"
+
+                        android:textAllCaps="true"
+                        android:textColor="@color/techer_gray"
+                        android:textSize="12sp" />
+
+                    <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                        android:id="@+id/tv_parents_educ"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_parents_name"
+                        android:layout_marginLeft="100dp"
+                        android:paddingRight="10dp"
+                        android:text=""
+                        android:singleLine="true"
+
+                        android:textAllCaps="true"
+                        android:textColor="@color/techer_orange"
+                        android:textSize="10sp" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_parents_post"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/tv_parents_educ">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/ll_parent_manage_post"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:padding="5dp">
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/gallery" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:orientation="vertical">
+
+                                    <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                                        android:id="@+id/tv_parent_viewpost"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="VIEW POST"
+                                        android:textAllCaps="true"
+                                        android:textSize="12sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="2dp"
+                                        android:orientation="horizontal">
+
+                                        <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                                            android:id="@+id/tv_parent_lbl_viewpost"
+
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:singleLine="true"
+                                            android:text="YOU CAN VIEW POST OF CHILDS"
+                                            android:textAllCaps="true"
+                                            android:textColor="@color/techer_orange"
+                                            android:textSize="8sp" />
+
+                                        <ImageView
+                                            android:id="@+id/iv_parents_manage_arrow"
+                                            android:layout_width="10dp"
+                                            android:layout_height="10dp"
+                                            android:layout_alignParentRight="true"
+
+                                            android:layout_marginRight="@dimen/tech_arrow_mrg"
+                                            android:src="@drawable/orange_right"
+
+                                            />
+
+
+                                    </LinearLayout>
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginTop="4dp"
+                                        android:background="@color/techer_view_line"></View>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_parent_manage_sub_post"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="25dp"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:visibility="gone"
+                                    android:padding="5dp">
+
+                                    <ImageView
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/new_post" />
+
+                                    <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:text="Direct Message"
+                                        android:textAllCaps="true"
+                                        android:textColor="@color/techer_gray"
+                                        android:textSize="@dimen/tech_cat_title" />
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/ll_parent_new_Post"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="25dp"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:visibility="gone"
+                                    android:padding="5dp">
+
+                                    <ImageView
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/new_post" />
+
+                                    <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:text="New post"
+                                        android:textAllCaps="true"
+                                        android:textColor="@color/techer_gray"
+                                        android:textSize="@dimen/tech_cat_title" />
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/ll_parents_view_post"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="25dp"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:padding="5dp">
+
+                                    <ImageView
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:src="@drawable/view_post" />
+
+                                    <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                                        android:id="@+id/tv_parents_subpost_view_posts"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:text="view posts"
+                                        android:textAllCaps="true"
+                                        android:textColor="@color/techer_gray"
+                                        android:textSize="12sp" />
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/rl_parents_post"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@color/techer_view_line"></View>
+
+
+                    <RelativeLayout
+                        android:id="@+id/rl_parents_attend"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_parents_post">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/ll_parents_manage_attendence_parent"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+
+                                <ImageView
+                                    android:id="@+id/imageView_parents"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/techer_attend_check" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:orientation="vertical">
+
+                                    <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                                        android:id="@+id/tv_parent_attendance"
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Attendance"
+                                        android:textAllCaps="true"
+                                        android:textSize="12sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="2dp"
+                                        android:orientation="horizontal">
+
+                                        <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                                            android:id="@+id/tv_parent_lbl_attandence"
+
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:singleLine="true"
+                                            android:text="Student Attendance Report"
+                                            android:textAllCaps="true"
+                                            android:textColor="@color/parpal_subtitle"
+                                            android:textSize="8sp" />
+
+                                        <ImageView
+                                            android:id="@+id/iv_parents_attandence_arrow"
+                                            android:layout_width="10dp"
+                                            android:layout_height="10dp"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_below="@+id/tv_attend_main"
+                                            android:layout_marginRight="@dimen/tech_arrow_mrg"
+                                            android:src="@drawable/purple_right"
+
+                                            />
+
+
+                                    </LinearLayout>
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginTop="4dp"
+                                        android:background="@color/techer_view_line"></View>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_parents_manage_attendence_sub_post"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:id="@+id/ll_parents_view_monthly_report"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="25dp"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:padding="5dp">
+
+                                    <ImageView
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:src="@drawable/ic_attendance_report" />
+
+                                    <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                                        android:id="@+id/tv_attendence_parent_sub_post_view_monthly_report"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:text="view monthly report"
+                                        android:textAllCaps="true"
+                                        android:textColor="@color/techer_gray"
+                                        android:textSize="12sp" />
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/ll_parents_view_weekly_report"
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="25dp"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:padding="5dp">
+
+                                    <ImageView
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:src="@drawable/ic_attendance_report" />
+
+                                    <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                                        android:id="@+id/tv_attendence_parent_sub_post_view_weekly_report"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:text="view weekly report"
+                                        android:textAllCaps="true"
+                                        android:textColor="@color/techer_gray"
+                                        android:textSize="12sp" />
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/rl_parents_attend"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@color/techer_view_line"></View>
+
+
+                    <RelativeLayout
+                        android:id="@+id/rl_parents_event_calender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_parents_attend">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/ll_parents_event_calender_parent"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/teacher_calender" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:orientation="vertical">
+
+                                    <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                                        android:id="@+id/tv_parent_events"
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Events"
+                                        android:textAllCaps="true"
+                                        android:textSize="12sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="2dp"
+                                        android:orientation="horizontal">
+
+                                        <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                                            android:id="@+id/tv_parent_lbl_events"
+
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:singleLine="true"
+                                            android:text="Check Events For Little Land"
+                                            android:textAllCaps="true"
+                                            android:textColor="@color/green"
+                                            android:textSize="8sp" />
+
+                                        <ImageView
+                                            android:id="@+id/iv_parents_events_arrow"
+                                            android:layout_width="10dp"
+                                            android:layout_height="10dp"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_below="@+id/tv_parents_attend_main"
+                                            android:layout_marginRight="@dimen/tech_arrow_mrg"
+                                            android:src="@drawable/green_right"
+
+                                            />
+
+
+                                    </LinearLayout>
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginTop="4dp"
+                                        android:background="@color/techer_view_line"></View>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_parents_event_calender_sub_post"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:id="@+id/ll_parents_view_calender"
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="25dp"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:padding="5dp">
+
+                                    <ImageView
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:src="@drawable/ic_view_calendar" />
+
+                                    <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                                        android:id="@+id/tv_events_parent_sub_post_view_calender"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:text="view calendar"
+                                        android:textAllCaps="true"
+                                        android:textColor="@color/techer_gray"
+                                        android:textSize="12sp" />
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/rl_parents_event_calender"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@color/techer_view_line"></View>
+
+
+                    <RelativeLayout
+                        android:id="@+id/rl_parents_direct_message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_below="@+id/rl_parents_event_calender">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/ll_parents_direct_message"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/ic_direct_message" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:orientation="vertical">
+
+                                    <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                                        android:id="@+id/tv_parent_direct"
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Direct"
+                                        android:textAllCaps="true"
+                                        android:textSize="12sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="2dp"
+                                        android:orientation="horizontal">
+
+                                        <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                                            android:id="@+id/tv_parent_lbl_direct"
+
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:singleLine="true"
+                                            android:text="Send Direct Message"
+                                            android:textAllCaps="true"
+                                            android:textColor="@color/parpal_subtitle"
+                                            android:textSize="8sp" />
+
+                                        <ImageView
+                                            android:id="@+id/iv_parents_direct_arrow"
+                                            android:layout_width="10dp"
+                                            android:layout_height="10dp"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_below="@+id/tv_attend_main"
+                                            android:layout_marginRight="@dimen/tech_arrow_mrg"
+                                            android:src="@drawable/purple_right"
+
+                                            />
+
+
+                                    </LinearLayout>
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginTop="4dp"
+                                        android:background="@color/techer_view_line"></View>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_parents_direct_message_sub_post"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:id="@+id/ll_parents_send_message"
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="25dp"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:padding="5dp">
+
+                                    <ImageView
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:src="@drawable/ic_send_direct_message" />
+
+                                    <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                                        android:id="@+id/tv_direct_parent_sub_post_send_message"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:text="Send Message"
+                                        android:textAllCaps="true"
+                                        android:textColor="@color/techer_gray"
+                                        android:textSize="12sp" />
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/ll_parents_conversations"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="25dp"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:padding="5dp">
+
+                                    <ImageView
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:src="@drawable/ic_conversation" />
+
+                                    <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                                        android:id="@+id/tv_direct_parent_sub_post_conversion"
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:text="Conversations"
+                                        android:textAllCaps="true"
+                                        android:textColor="@color/techer_gray"
+                                        android:textSize="12sp" />
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+                <com.github.siyamed.shapeimageview.CircularImageView
+                    android:id="@+id/iv_user_image"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="180dp"
+                    app:siBorderColor="#ffffff"
+
+                    app:siBorderWidth="2dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/iv_orange_round"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/iv_star_blue"
+        android:layout_alignParentLeft="true"
+        android:padding="5dp"
+        android:src="@drawable/ic_round_orange" />
+
+    <ImageView
+        android:id="@+id/iv_round_green"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_teacher_post_green" />
+
+    <ImageView
+        android:id="@+id/iv_green_star_right"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/iv_star_blue"
+        android:layout_alignParentRight="true"
+        android:padding="5dp"
+        android:src="@drawable/green_star" />
+
+    <ImageView
+        android:id="@+id/iv_round_orange_right"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_teacher_post_red" />
+
+</RelativeLayout>

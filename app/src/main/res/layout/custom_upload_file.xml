@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_main_image"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_image"
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/no_image_available" />
+
+                <TextView
+                    android:id="@+id/tv_image_remove"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@color/techer_orange"
+                    android:gravity="center"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="2dp"
+                    android:singleLine="true"
+                    android:text="Remove"
+
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+            </FrameLayout>
+
+            <!--<TextView
+                android:id="@+id/tv_image_remove"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/techer_orange"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Remove"
+                android:textColor="@color/white"
+                android:textSize="12sp" />-->
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_main_video"
+
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/gray_text">
+
+                <ImageView
+                    android:id="@+id/iv_VideoView"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/video_thumb" />
+
+                <ImageView
+                    android:id="@+id/iv_video_view_thumb"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_play_video" />
+
+
+                <TextView
+                    android:id="@+id/tv_video_remove"
+
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@color/techer_orange"
+                    android:gravity="center"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="2dp"
+                    android:singleLine="true"
+                    android:text="Remove"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+            </FrameLayout>
+
+            <!--    <TextView
+                    android:id="@+id/tv_video_remove"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/techer_orange"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Remove"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />-->
+
+        </LinearLayout>
+
+        <!-- <ImageView
+             android:id="@+id/iv_video"
+             android:layout_width="60dp"
+             android:layout_height="60dp"
+             android:layout_marginLeft="5dp"
+             android:src="@drawable/ic_video_camera"/>-->
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_calender"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_round_50dp"
+        android:layout_above="@+id/rl_attend"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/calender_green_round_bg">
+
+        <com.leadinfosoft.littleland.widget.MyHeaderTextView
+            android:id="@+id/iv_calender"
+            android:layout_width="@dimen/cal_event_date_width"
+            android:layout_height="@dimen/cal_event_date_width"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/calender_white_round_bg"
+            android:gravity="center"
+            android:text="12"
+            android:textColor="@color/cal_green" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/iv_calender"
+            android:layout_toRightOf="@+id/iv_bell"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:gravity="center"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:singleLine="true"
+                android:text="11:30 Am"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/cal_event_time" />
+
+            <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:singleLine="true"
+                android:text="اجتماع الأهل"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/cal_event_name" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/iv_bell"
+            android:layout_width="@dimen/home_image_bell_width"
+            android:layout_height="@dimen/home_image_bell_heigth"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/green_bell" />
+    </RelativeLayout>
+</LinearLayout>

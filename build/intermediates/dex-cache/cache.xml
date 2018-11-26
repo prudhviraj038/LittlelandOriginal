@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/mac/Downloads/Littleland Original/app/build/intermediates/exploded-aar/io.reactivex.rxjava2/rxandroid/2.0.1/jars/classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="4119ea97a7191ff9b8f33b534ea220448f62f491">
+        <dex dex="/Users/mac/Downloads/Littleland Original/app/build/intermediates/pre-dexed/debug/io.reactivex.rxjava2-rxandroid-2.0.1_39b237b54c46208be0c97a63d942c2ecab1ef221.jar" />
+    </item>
+    <item
+        jar="/Users/mac/Downloads/Littleland Original/app/build/intermediates/exploded-aar/com.github.siyamed/android-shape-imageview/0.9.3/jars/classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="ee07783aa59eefdeacc107abf472f45f60272302">
+        <dex dex="/Users/mac/Downloads/Littleland Original/app/build/intermediates/pre-dexed/debug/com.github.siyamed-android-shape-imageview-0.9.3_2e56bdf16061ae44e73712c7a2b79a32266c28c3.jar" />
+    </item>
+    <item
+        jar="/Users/mac/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="/Users/mac/Downloads/Littleland Original/app/build/intermediates/pre-dexed/debug/support-annotations-25.3.1_c432c64a32297a5c9892487eb4792075f89eed2b.jar" />
+    </item>
+    <item
+        jar="/Users/mac/.gradle/caches/modules-2/files-2.1/org.reactivestreams/reactive-streams/1.0.0/14b8c877d98005ba3941c9257cfe09f6ed0e0d74/reactive-streams-1.0.0.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="14b8c877d98005ba3941c9257cfe09f6ed0e0d74">
+        <dex dex="/Users/mac/Downloads/Littleland Original/app/build/intermediates/pre-dexed/debug/reactive-streams-1.0.0_4f1a4b32a99c55d3ef883b76518e767a717e77cb.jar" />
+    </item>
+    <item
+        jar="/Users/mac/Downloads/Littleland Original/app/build/intermediates/exploded-aar/id.zelory/compressor/2.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="6b1555196d65ffa1174f6f49efb2f278905f537a">
+        <dex dex="/Users/mac/Downloads/Littleland Original/app/build/intermediates/pre-dexed/debug/id.zelory-compressor-2.1.0_585d910d4a6f22dcf93da140905de664d3b0324f.jar" />
+    </item>
+    <item
+        jar="/Users/mac/Downloads/Littleland Original/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="dd7676ac12aa6653718b7ea33d93ce9d6915d526">
+        <dex dex="/Users/mac/Downloads/Littleland Original/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-9.2.0_8a128a2e371091f6b4228633bc7270d41e4f472f.jar" />
+    </item>
+    <item
+        jar="/Users/mac/Downloads/Littleland Original/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="593fbaec1c3e100480a2bd72457b64b7dde6ac2d">
+        <dex dex="/Users/mac/Downloads/Littleland Original/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tasks-9.2.0_ab2e68626eebf467a65b2ddc7b824174d80d26e6.jar" />
+    </item>
+    <item
+        jar="/Users/mac/Downloads/Littleland Original/app/build/intermediates/exploded-aar/net.gotev/uploadservice/2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="372295458f730b0715898d4b477a85aa1a777504">
+        <dex dex="/Users/mac/Downloads/Littleland Original/app/build/intermediates/pre-dexed/debug/net.gotev-uploadservice-2.1_bdae44a19012457a575328988223dff4bc9e1ba2.jar" />
+    </item>
+    <item
+        jar="/Users/mac/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/Users/mac/Downloads/Littleland Original/app/build/intermediates/pre-dexed/debug/picasso-2.5.2_9499bc38c172538bae06bd65c9f455636cdde92a.jar" />
+    </item>
+    <item
+        jar="/Users/mac/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife-annotations/8.1.0/d6854f42bfb4098d3d2358d93201307b9f1cc95d/butterknife-annotations-8.1.0.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="d6854f42bfb4098d3d2358d93201307b9f1cc95d">
+        <dex dex="/Users/mac/Downloads/Littleland Original/app/build/intermediates/pre-dexed/debug/butterknife-annotations-8.1.0_544f1bc9f9c82f60dd5405444cec90d52c7aadc9.jar" />
+    </item>
+    <item
+        jar="/Users/mac/Downloads/Littleland Original/app/libs/httpcore-4.3.3.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="f91b7a4aadc5cf486df6e4634748d7dd7a73f06d">
+        <dex dex="/Users/mac/Downloads/Littleland Original/app/build/intermediates/pre-dexed/debug/httpcore-4.3.3_a6e7d73e6471c5dcaa4c0206deae82d32b8dbae1.jar" />
+    </item>
+    <item
+        jar="/Users/mac/Downloads/Littleland Original/app/libs/httpclient-4.3.5.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="9783d89b8eea20a517a4afc5f979bd2882b54c44">
+        <dex dex="/Users/mac/Downloads/Littleland Original/app/build/intermediates/pre-dexed/debug/httpclient-4.3.5_5114ebef105583e6a57137252f44d53f9a1afc7a.jar" />
+    </item>
+    <item
+        jar="/Users/mac/Downloads/Littleland Original/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="/Users/mac/Downloads/Littleland Original/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.3.1_873f402ac4e5d8ec38e3ab59e2aa105860d2399b.jar" />
+    </item>
+    <item
+        jar="/Users/mac/Downloads/Littleland Original/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="b266c8faa5af72e579b9da36ef35053ffed6ac64">
+        <dex dex="/Users/mac/Downloads/Littleland Original/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-25.1.0_6b9f05c8ea8961aaf1d9ecd0719318298f818307.jar" />
+    </item>
+    <item
+        jar="/Users/mac/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.4/695b63d702f505b9b916e02272e3b6381bade7f/gson-2.4.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="0695b63d702f505b9b916e02272e3b6381bade7f">
+        <dex dex="/Users/mac/Downloads/Littleland Original/app/build/intermediates/pre-dexed/debug/gson-2.4_6aa4c3bec005f576efab05bc65aa902b4908fc02.jar" />
+    </item>
+    <item
+        jar="/Users/mac/Downloads/Littleland Original/app/build/intermediates/exploded-aar/com.android.volley/volley/1.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="2cd4b982617e544728de0782d718a58ce1b06e3f">
+        <dex dex="/Users/mac/Downloads/Littleland Original/app/build/intermediates/pre-dexed/debug/com.android.volley-volley-1.0.0_781a9e93df7c1a6d500f904453adea75c4bd071b.jar" />
+    </item>
+    <item
+        jar="/Users/mac/Downloads/Littleland Original/app/build/intermediates/exploded-aar/Littleland Original/videocompressor/unspecified/jars/libs/isoparser-1.0.6.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="4bd42dc4d61afb67555d69ec141fec72f3b44bf0">
+        <dex dex="/Users/mac/Downloads/Littleland Original/app/build/intermediates/pre-dexed/debug/isoparser-1.0.6_20d5a27c01d9e4972a98f4d48407edf1778d255c.jar" />
+    </item>
+    <item
+        jar="/Users/mac/Downloads/Littleland Original/app/build/intermediates/exploded-aar/com.github.sundeepk/compact-calendar-view/2.0.3-beta/jars/classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="a936d1131ec6d65a7094eb4ec37ecf6704f9a336">
+        <dex dex="/Users/mac/Downloads/Littleland Original/app/build/intermediates/pre-dexed/debug/com.github.sundeepk-compact-calendar-view-2.0.3-beta_3854caaf5d831e8048dd705562beef01fc45776a.jar" />
+    </item>
+    <item
+        jar="/Users/mac/Downloads/Littleland Original/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="/Users/mac/Downloads/Littleland Original/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.3.1_f4e8b339c068b485fc36a0b5c17259894da54e9b.jar" />
+    </item>
+    <item
+        jar="/Users/mac/Downloads/Littleland Original/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="/Users/mac/Downloads/Littleland Original/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.3.1_57f3e49d03d31a80fb9b5947b71725725cb45755.jar" />
+    </item>
+    <item
+        jar="/Users/mac/Downloads/Littleland Original/app/build/intermediates/exploded-aar/com.android.support/transition/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="d38084015027549951cbaea5d5f6fb795cc81151">
+        <dex dex="/Users/mac/Downloads/Littleland Original/app/build/intermediates/pre-dexed/debug/com.android.support-transition-25.1.0_9a4de147c34e163eeaf709bd2982cd4084900daf.jar" />
+    </item>
+    <item
+        jar="/Users/mac/Downloads/Littleland Original/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="/Users/mac/Downloads/Littleland Original/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.3.1_cfd5c69b5ca42cea208b2253945b5d615b916b4b.jar" />
+    </item>
+    <item
+        jar="/Users/mac/Downloads/Littleland Original/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="4838df6db988160b107e954e02a745370df543b6">
+        <dex dex="/Users/mac/Downloads/Littleland Original/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-analytics-9.2.0_849343c0b1c19d080475b02fdaf369370b1bd661.jar" />
+    </item>
+    <item
+        jar="/Users/mac/Downloads/Littleland Original/app/build/intermediates/exploded-aar/jp.wasabeef/picasso-transformations/2.1.2/jars/classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="d5d22a873f93271b4a339840ff29b3786258aac8">
+        <dex dex="/Users/mac/Downloads/Littleland Original/app/build/intermediates/pre-dexed/debug/jp.wasabeef-picasso-transformations-2.1.2_45fa7f8aaa667ce0b61c5727400a1f91075ec382.jar" />
+    </item>
+    <item
+        jar="/Users/mac/.gradle/caches/modules-2/files-2.1/com.nostra13.universalimageloader/universal-image-loader/1.9.5/442dbfb517b9ab5cb5c6da7ebf8cc28ec5bd0375/universal-image-loader-1.9.5.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="442dbfb517b9ab5cb5c6da7ebf8cc28ec5bd0375">
+        <dex dex="/Users/mac/Downloads/Littleland Original/app/build/intermediates/pre-dexed/debug/universal-image-loader-1.9.5_2589d19d7cd1326c7a9c6e59024d7ae62d8f2538.jar" />
+    </item>
+    <item
+        jar="/Users/mac/Downloads/Littleland Original/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="dc4c18602ecffb3e69cda6cdc51ba4feac0f97d7">
+        <dex dex="/Users/mac/Downloads/Littleland Original/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-iid-9.2.0_c4c046b2fb867c38cbe75d9acb872b87c6c7f53b.jar" />
+    </item>
+    <item
+        jar="/Users/mac/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.7.0/9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4/glide-3.7.0.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="/Users/mac/Downloads/Littleland Original/app/build/intermediates/pre-dexed/debug/glide-3.7.0_e37c10e7c747da2b195f597e34ac4aeff9785b16.jar" />
+    </item>
+    <item
+        jar="/Users/mac/Downloads/Littleland Original/app/build/intermediates/exploded-aar/com.android.support/design/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="30103d98fa5ed824b54af839c85e2111f9bde8ec">
+        <dex dex="/Users/mac/Downloads/Littleland Original/app/build/intermediates/pre-dexed/debug/com.android.support-design-25.1.0_1ac6bb08cf233b45a9836c37ace836f5c529cbe7.jar" />
+    </item>
+    <item
+        jar="/Users/mac/Downloads/Littleland Original/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/9.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="21bb89120d84fa29afeb0f9c0ebf415bc3b45a7e">
+        <dex dex="/Users/mac/Downloads/Littleland Original/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-messaging-9.2.0_5d37f50887a097019df5d980704267746608e762.jar" />
+    </item>
+    <item
+        jar="/Users/mac/Downloads/Littleland Original/app/build/intermediates/exploded-aar/com.afollestad/easyvideoplayer/0.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="7c9ef64fc4b3c21a9b584017a93d7fe739ae711a">
+        <dex dex="/Users/mac/Downloads/Littleland Original/app/build/intermediates/pre-dexed/debug/com.afollestad-easyvideoplayer-0.3.0_59731107f6c1f04000f3d9eb39c13a960dc19ca6.jar" />
+    </item>
+    <item
+        jar="/Users/mac/Downloads/Littleland Original/app/build/intermediates/exploded-aar/me.zhanghai.android.materialprogressbar/library/1.1.7/jars/classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="1478a113f04bf0b679037b4f6bd88bd1837b96a3">
+        <dex dex="/Users/mac/Downloads/Littleland Original/app/build/intermediates/pre-dexed/debug/me.zhanghai.android.materialprogressbar-library-1.1.7_9fe0f066f013a336985ab45c8e27b61f28946e7e.jar" />
+    </item>
+    <item
+        jar="/Users/mac/Downloads/Littleland Original/app/build/intermediates/exploded-aar/com.wang.avi/library/2.1.3/jars/classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="e699699fae0092703de1d02b217f43803d0f7e0a">
+        <dex dex="/Users/mac/Downloads/Littleland Original/app/build/intermediates/pre-dexed/debug/com.wang.avi-library-2.1.3_a40eb51864556201a6557888a157c4a062117ae6.jar" />
+    </item>
+    <item
+        jar="/Users/mac/Downloads/Littleland Original/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="/Users/mac/Downloads/Littleland Original/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.3.1_823f7d7dd7683fe72a0440cd69567ac1c7e46288.jar" />
+    </item>
+    <item
+        jar="/Users/mac/Downloads/Littleland Original/app/libs/httpmime-4.3.5.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="1dd0d38df9c6d21e893f2e52403f1cd99e91cd81">
+        <dex dex="/Users/mac/Downloads/Littleland Original/app/build/intermediates/pre-dexed/debug/httpmime-4.3.5_69243a6401bc0b883c122b2cab9e644b2d838056.jar" />
+    </item>
+    <item
+        jar="/Users/mac/Downloads/Littleland Original/app/libs/httpclient-cache-4.3.5.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="d96ec3034bd8429deaba77229183ffb1532edc1b">
+        <dex dex="/Users/mac/Downloads/Littleland Original/app/build/intermediates/pre-dexed/debug/httpclient-cache-4.3.5_ceceb3f1c3ca98393a8ad1a02c0ae80711752311.jar" />
+    </item>
+    <item
+        jar="/Users/mac/Downloads/Littleland Original/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="363f626ad5686283250cdb6073ae1bba5cb07a87">
+        <dex dex="/Users/mac/Downloads/Littleland Original/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-common-9.2.0_8018c2dc9a2fc4c5c4825c311995f83e386903f2.jar" />
+    </item>
+    <item
+        jar="/Users/mac/Downloads/Littleland Original/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="/Users/mac/Downloads/Littleland Original/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.3.1_011091c0d807b5b8f02ace10929466e16aec4ff8.jar" />
+    </item>
+    <item
+        jar="/Users/mac/Downloads/Littleland Original/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="fb15fd9774b5c51dcb39d8e6fa1b6f06bcd1cd34">
+        <dex dex="/Users/mac/Downloads/Littleland Original/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-analytics-impl-9.2.0_8ab388a91f7ba769ae18eab39e8f6bacdb823d38.jar" />
+    </item>
+    <item
+        jar="/Users/mac/Downloads/Littleland Original/app/build/intermediates/exploded-aar/Littleland Original/videocompressor/unspecified/jars/libs/aspectjrt-1.7.3.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="c8c4dc569147713e5479fcbc88b208a5952bdd25">
+        <dex dex="/Users/mac/Downloads/Littleland Original/app/build/intermediates/pre-dexed/debug/aspectjrt-1.7.3_5f6ac353b2a5c8008f7e6042c8d955b4e81be5bb.jar" />
+    </item>
+    <item
+        jar="/Users/mac/Downloads/Littleland Original/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="/Users/mac/Downloads/Littleland Original/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.3.1_0a8ba3833efd3b04e0695c2e8ec7ddb4d68ddc4b.jar" />
+    </item>
+    <item
+        jar="/Users/mac/Downloads/Littleland Original/app/build/intermediates/exploded-aar/com.github.johnpersano/supertoasts/2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="8f30f0d083aa1d28b5fd24626c2449588e15ed70">
+        <dex dex="/Users/mac/Downloads/Littleland Original/app/build/intermediates/pre-dexed/debug/com.github.johnpersano-supertoasts-2.0_0c1820e3207f86a8e7a605b0101be5c9bd8acae0.jar" />
+    </item>
+    <item
+        jar="/Users/mac/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="/Users/mac/Downloads/Littleland Original/app/build/intermediates/pre-dexed/debug/library-2.4.0_fcd7bf57330797c3eaeb05d042207c4ab7ecac63.jar" />
+    </item>
+    <item
+        jar="/Users/mac/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.1.0/2fdf84dedcaaeabb9d70cde9dbb8aad4eccb80a1/rxjava-2.1.0.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="2fdf84dedcaaeabb9d70cde9dbb8aad4eccb80a1">
+        <dex dex="/Users/mac/Downloads/Littleland Original/app/build/intermediates/pre-dexed/debug/rxjava-2.1.0_25377596cf1ee6bce2f8cb7d858eb8552de2eb91.jar" />
+    </item>
+    <item
+        jar="/Users/mac/Downloads/Littleland Original/app/build/intermediates/exploded-aar/jp.co.cyberagent.android.gpuimage/gpuimage-library/1.4.1/jars/classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="eb9f1cef6b29492df701111c555908cb53dece35">
+        <dex dex="/Users/mac/Downloads/Littleland Original/app/build/intermediates/pre-dexed/debug/jp.co.cyberagent.android.gpuimage-gpuimage-library-1.4.1_2b16dcec06eaaf36eec21dfaed249e9489837477.jar" />
+    </item>
+    <item
+        jar="/Users/mac/Downloads/Littleland Original/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/mac/Downloads/Littleland Original/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.3.1_39415cfe397493b635467c14ee242ae1ab77305b.jar" />
+    </item>
+    <item
+        jar="/Users/mac/Downloads/Littleland Original/app/build/intermediates/exploded-aar/Littleland Original/videocompressor/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="8899c7d32469063386558abec6d4cc4b7b7531a1">
+        <dex dex="/Users/mac/Downloads/Littleland Original/app/build/intermediates/pre-dexed/debug/Littleland Original-videocompressor-unspecified_8083eb5a1e87713afb84bee7e8b4f12e4e744738.jar" />
+    </item>
+    <item
+        jar="/Users/mac/Downloads/Littleland Original/app/build/intermediates/exploded-aar/com.jakewharton/butterknife/8.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="d4ab8678882571a0a6f19c47a826ecbce5b4f42b">
+        <dex dex="/Users/mac/Downloads/Littleland Original/app/build/intermediates/pre-dexed/debug/com.jakewharton-butterknife-8.1.0_e36e5a139a0636935505f71cf79a5fe22084080b.jar" />
+    </item>
+    <item
+        jar="/Users/mac/Downloads/Littleland Original/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="/Users/mac/Downloads/Littleland Original/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.3.1_a34c03762b8832741db0fb90a25416d74bf64777.jar" />
+    </item>
+
+</items>

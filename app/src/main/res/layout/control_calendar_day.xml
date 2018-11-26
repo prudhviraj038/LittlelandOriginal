@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:paddingTop="3dp"
+    android:background="@color/white"
+
+    android:paddingBottom="3dp"
+    >
+    <com.leadinfosoft.littleland.widget.MyHeaderTextView
+        android:id="@+id/tv_date"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:minHeight="25dp"
+        android:gravity="center"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textAlignment="center"
+        android:text="12"
+        android:textColor="@color/cal_day"
+        android:textSize="12sp"
+        android:background="@drawable/calender_event_festival"/>
+</LinearLayout>
+

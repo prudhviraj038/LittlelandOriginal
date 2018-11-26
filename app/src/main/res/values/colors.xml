@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="colorstatusbar">#67ffffff</color>
+    <color name="colorAccent">#000000</color>
+
+    <color name="black">#000000</color>
+    <color name="lite_black">#fe252424</color>
+    <color name="white">#FFFFFF</color>
+    <color name="menu_list">#FFFFFF</color>
+    <color name="green">#729747</color>
+
+    <color name="app_background">#FFFFFF</color>
+    <color name="hint">#BFBFBF</color>
+    <color name="login_text">#17579f</color>
+    <color name="loader_color">#729747</color>
+
+    <color name="today">#4b82ff</color>
+    <color name="week_name">#719747</color>
+    <color name="cal_day">#6B6B6B</color>
+    <color name="greyed_out">#dedede</color>
+    <color name="cal_green">#FFFFFF</color>
+    <color name="cal_yellow">#FFFFFF</color>
+    <color name="cal_pink">#FFFFFF</color>
+    <color name="cal_month_select">#62AF51</color>
+    <color name="cal_set_event">#FFFFFF</color>
+
+
+    <color name="gray_text">#8C8C8C</color>
+    <color name="more_gray_text">#7b7a7a</color>
+    <color name="dark_gray_text">#535353</color>
+    <color name="gray_dark">#515151</color>
+    <color name="attend_present">#BACCA4</color>
+    <color name="attend_absent">#E1DACA</color>
+    <color name="image_boder">#a186be</color>
+    <color name="parpal_subtitle">#8A6294</color>
+    <color name="attend_disable_txt">#a6ffffff</color>
+
+    <color name="login_org">#D56750</color>
+    <color name="login_forg_text">#4E4E4E</color>
+
+    <color name="month_attend_gray">#F2F2F2</color>
+    <color name="daily_present">#337126</color>
+    <color name="daily_absent">#A93A26</color>
+
+    <color name="techer_gray">#6F6F6F</color>
+    <color name="techer_orange">#D16E59</color>
+    <color name="techer_parpal">#A087A5</color>
+    <color name="techer_green">#62AF51</color>
+    <color name="techer_view_line">#E9E9E9</color>
+
+
+    <color name="stoke_color">#a28c8c8c</color>
+
+    <color name="calender_screen_background">#EBEBEB</color>
+
+    <color name="message_gray_background">#E6E6E6</color>
+    <color name="red">#f1f50808</color>
+
+    <color name="present_gren_color">#BACCA4</color>
+
+    <color name="app_purple">#B297C8</color>
+
+    <color name="weekend_absent_color">#E1DACA</color>
+
+</resources>

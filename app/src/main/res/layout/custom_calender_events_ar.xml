@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/calender_green_round_bg"
+        android:gravity="center_vertical"
+        android:layoutDirection="rtl"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/oval_whitestoke"
+                android:gravity="center"
+                android:text="5"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tv_event_name"
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:singleLine="true"
+                android:text="PARENTS "
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/iv_bell"
+
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_bell_white" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

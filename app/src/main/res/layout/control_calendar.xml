@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <!-- date toolbar -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="12dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="12dp"
+        android:visibility="gone">
+
+
+        <!-- prev button -->
+        <ImageView
+            android:id="@+id/calendar_prev_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/bell"
+            android:visibility="visible" />
+
+        <!-- date title -->
+        <com.leadinfosoft.littleland.widget.MyHeaderTextView
+            android:id="@+id/calendar_date_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/calendar_next_button"
+            android:layout_toRightOf="@+id/calendar_prev_button"
+            android:gravity="center"
+            android:text="current date"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="#222222"
+            android:visibility="visible" />
+
+        <!-- next button -->
+        <ImageView
+            android:id="@+id/calendar_next_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/bell"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/hsv"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/celender_month"
+        android:overScrollMode="always"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/ll_mounth"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+
+            android:gravity="center_vertical"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+            <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                android:id="@+id/tv_mon1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:tag="1"
+                android:text="Jan"
+                android:textColor="@color/white" />
+
+            <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                android:id="@+id/tv_mon2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:tag="2"
+                android:text=""
+                android:textColor="@color/white" />
+
+            <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                android:id="@+id/tv_mon3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:tag="3"
+                android:text=""
+                android:textColor="@color/white" />
+
+            <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                android:id="@+id/tv_mon4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:tag="4"
+                android:text=""
+                android:textColor="@color/white" />
+
+            <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                android:id="@+id/tv_mon5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:tag="5"
+                android:text=""
+                android:textColor="@color/white" />
+
+            <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                android:id="@+id/tv_mon6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:tag="6"
+                android:text=""
+                android:textColor="@color/white" />
+
+            <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                android:id="@+id/tv_mon7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:tag="7"
+                android:text=""
+                android:textColor="@color/white" />
+
+            <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                android:id="@+id/tv_mon8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:tag="8"
+                android:text=""
+                android:textColor="@color/white" />
+
+            <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                android:id="@+id/tv_mon9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text=""
+                android:textColor="@color/white" />
+
+            <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                android:id="@+id/tv_mon10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:tag="10"
+                android:text=""
+                android:textColor="@color/white" />
+
+            <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                android:id="@+id/tv_mon11"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:tag="11"
+                android:text=""
+                android:textColor="@color/white" />
+
+            <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                android:id="@+id/tv_mon12"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:tag="12"
+                android:text=""
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+    <!-- days header -->
+    <LinearLayout
+        android:id="@+id/calendar_header"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.leadinfosoft.littleland.widget.MyHeaderTextView
+            android:id="@+id/tv_week1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text=""
+            android:textColor="@color/week_name"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <com.leadinfosoft.littleland.widget.MyHeaderTextView
+            android:id="@+id/tv_week2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text=""
+            android:textColor="@color/week_name"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <com.leadinfosoft.littleland.widget.MyHeaderTextView
+            android:id="@+id/tv_week3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text=""
+            android:textColor="@color/week_name"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <com.leadinfosoft.littleland.widget.MyHeaderTextView
+            android:id="@+id/tv_week4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text=""
+            android:textColor="@color/week_name"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <com.leadinfosoft.littleland.widget.MyHeaderTextView
+            android:id="@+id/tv_week5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text=""
+            android:textColor="@color/week_name"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <com.leadinfosoft.littleland.widget.MyHeaderTextView
+            android:id="@+id/tv_week6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text=""
+            android:textColor="@color/week_name"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <com.leadinfosoft.littleland.widget.MyHeaderTextView
+            android:id="@+id/tv_week7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text=""
+            android:textColor="@color/week_name"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <!-- days view -->
+    <GridView
+        android:id="@+id/calendar_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="7" />
+</LinearLayout>

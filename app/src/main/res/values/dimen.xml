@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="firstpage_margin">50dp</dimen>
+    <dimen name="home_round_50dp">35dp</dimen>
+    <dimen name="home_round_margin">50dp</dimen>
+    <dimen name="home_image_width">20dp</dimen>
+    <dimen name="home_image_heigth">20dp</dimen>
+    <dimen name="cal_event_date_width">30dp</dimen>
+    <dimen name="cal_event_date_heigth">30dp</dimen>
+    <dimen name="home_image_bell_width">25dp</dimen>
+    <dimen name="home_image_bell_heigth">25dp</dimen>
+    <dimen name="Week_attand_heth">25dp</dimen>
+    <dimen name="viewpost_tab_heth">25dp</dimen>
+    <dimen name="viewpost_title_heth">35dp</dimen>
+    <dimen name="mont_attend_name_heth">20dp</dimen>
+    <dimen name="mont_attend_name_wdth">130dp</dimen>
+
+
+    <dimen name="menu_image_wdth">25dp</dimen>
+    <dimen name="menu_image_heth">25dp</dimen>
+    <dimen name="home_image_mag">40dp</dimen>
+
+    <dimen name="login_baby_heth">350dp</dimen>
+    <dimen name="login_view_heth">5dp</dimen>
+    <dimen name="login_curve_heth">380dp</dimen>
+    <dimen name="login_curve_heth_500">500dp</dimen>
+
+    <dimen name="login_editxt_wdth">250dp</dimen>
+    <dimen name="login_editxt_heth">35dp</dimen>
+    <dimen name="login_editxt_marg_bot">8dp</dimen>
+    <dimen name="login_editxt_pend_right">10dp</dimen>
+    <dimen name="login_editxt_pend_left">10dp</dimen>
+
+    <dimen name="tech_cat_image_wdth">40dp</dimen>
+    <dimen name="tech_cat_image_heth">40dp</dimen>
+    <dimen name="tech_cat_sidemarg">35dp</dimen>
+    <dimen name="tech_cat_topmarg">30dp</dimen>
+    <dimen name="tech_other_cat_topmarg">10dp</dimen>
+    <dimen name="tech_arrow_mrg">10dp</dimen>
+    <dimen name="tech_title_marg">10dp</dimen>
+    <dimen name="tech_sub_image_marg">50dp</dimen>
+
+
+
+
+    <dimen name="text_18sp">16sp</dimen>
+    <dimen name="text_16sp">16sp</dimen>
+    <dimen name="text_24sp">20sp</dimen>
+    <dimen name="text_14sp">14sp</dimen>
+    <dimen name="toolbar_header_text_14sp">14sp</dimen>
+    <dimen name="toolbar_sub_header_text_10sp">10sp</dimen>
+    <dimen name="week_name_text_10sp">10sp</dimen>
+    <dimen name="week_name_date_text_10sp">10sp</dimen>
+    <dimen name="week_name_day_text_12sp">12sp</dimen>
+    <dimen name="week_attend_text_12sp">10sp</dimen>
+    <dimen name="week_remark_text_10sp">8sp</dimen>
+    <dimen name="viewpost_time_text_10sp">12sp</dimen>
+    <dimen name="viewpost_date_text_10sp">12sp</dimen>
+    <dimen name="viewpost_title_text_14sp">14sp</dimen>
+    <dimen name="viewpost_des_text_10sp">10sp</dimen>
+    <dimen name="viewpost_title_12sp">12sp</dimen>
+    <dimen name="viewpost_time_date_10sp">10sp</dimen>
+    <dimen name="viewpost_tab_text_heth">10sp</dimen>
+    <dimen name="mont_attend_name_text">12sp</dimen>
+    <dimen name="mont_year_text">10sp</dimen>
+    <dimen name="mont_day_text">12sp</dimen>
+    <dimen name="mont_attp_day_text">12sp</dimen>
+    <dimen name="cal_event_name">12sp</dimen>
+    <dimen name="cal_event_time">12sp</dimen>
+
+    <dimen name="home_date_time_12sp">12sp</dimen>
+    <dimen name="home_viepager_title_12sp">12sp</dimen>
+    <dimen name="home_view_more_12sp">10sp</dimen>
+    <dimen name="home_tab_14sp">12sp</dimen>
+
+
+    <dimen name="login_admin">10sp</dimen>
+    <dimen name="login_forgot">12sp</dimen>
+    <dimen name="login_other_txt">14sp</dimen>
+    <dimen name="login_admin_marg_bot">10dp</dimen>
+    <dimen name="login_forgot_marg_bot">3dp</dimen>
+
+    <dimen name="menu_item">16sp</dimen>
+
+    <dimen name="techer_cureent_day">32sp</dimen>
+    <dimen name="techer_cureent_month">10sp</dimen>
+    <dimen name="techer_name">14sp</dimen>
+    <dimen name="techer_class_name">12sp</dimen>
+    <dimen name="tech_cat_title">14sp</dimen>
+    <dimen name="tech_cat_subtitle">8sp</dimen>
+
+</resources>

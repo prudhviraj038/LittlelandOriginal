@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    android:orientation="vertical">
+
+    <include layout="@layout/custome_toolbar"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp">
+
+            <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                android:id="@+id/tv_agree"
+                android:layout_width="@dimen/home_round_50dp"
+                android:layout_height="@dimen/viewpost_tab_heth"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/viewpost_weekly_bg"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="agree"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/viewpost_tab_text_heth" />
+
+            <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                android:id="@+id/tv_disagree"
+                android:layout_width="@dimen/home_round_50dp"
+                android:layout_height="@dimen/viewpost_tab_heth"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/viewpost_today_bg"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="disagree"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/viewpost_tab_text_heth" />
+
+            <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                android:id="@+id/tv_pending"
+                android:layout_width="@dimen/home_round_50dp"
+                android:layout_height="@dimen/viewpost_tab_heth"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/viewpost_monthly_bg"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="pending"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/viewpost_tab_text_heth" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:id="@+id/iv_agree"
+                android:layout_width="10dp"
+                android:layout_height="5dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="-2dp"
+                android:layout_weight="1"
+                android:paddingRight="0dp"
+                android:src="@drawable/bubal_week"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/iv_disagree"
+                android:layout_width="10dp"
+                android:layout_height="5dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+
+                android:layout_marginTop="-2dp"
+                android:layout_weight="1"
+                android:src="@drawable/bubal_today"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/iv_pending"
+                android:layout_width="10dp"
+                android:layout_height="5dp"
+                android:layout_marginLeft="3dp"
+
+                android:layout_marginTop="-2dp"
+                android:layout_weight="1"
+                android:src="@drawable/bubal_month"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/lv_view_opinion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:divider="@null"></ListView>
+
+            <TextView
+                android:id="@+id/tv_no_data"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:textColor="@color/gray_text"
+                android:text="No Data Available"/>
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

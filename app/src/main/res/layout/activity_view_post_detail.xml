@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.leadinfosoft.littleland.activity.ViewPostDetail">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        app:contentInsetStart="0dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:background="@drawable/toolbar_bg">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:src="@drawable/back_arrow"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"/>
+
+            <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/toolbar_header_text_14sp"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:layout_toLeftOf="@+id/iv_bell"
+                android:layout_toRightOf="@+id/iv_back"
+                android:text="adasdasdasd"
+                android:singleLine="true"/>
+
+            <com.leadinfosoft.littleland.widget.MyTextView
+               android:id="@+id/tv_subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/iv_bell"
+                android:layout_toRightOf="@+id/iv_back"
+                android:layout_below="@+id/tv_title"
+                android:text="sadasdadasd"
+                android:textSize="@dimen/toolbar_sub_header_text_10sp"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textColor="@color/parpal_subtitle"
+                android:singleLine="true"
+                />
+
+            <ImageView
+                android:id="@+id/iv_bell"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:src="@drawable/bell"
+                android:visibility="invisible"
+
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+           >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:weightSum="1">
+
+                <com.leadinfosoft.littleland.widget.MyTextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.45"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/viewpost_time_text_10sp"
+                    android:text=""
+                    android:paddingRight="5dp"
+                    android:gravity="right"
+                    android:textColor="@color/black"
+                    android:singleLine="true"
+                    android:textAllCaps="true"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.1"
+                    android:layout_height="25dp"
+                    android:src="@drawable/yellow_calender"/>
+
+                <com.leadinfosoft.littleland.widget.MyTextView
+                    android:id="@+id/tv_date"
+
+                    android:layout_width="0dp"
+                    android:layout_weight="0.45"
+                    android:textSize="@dimen/viewpost_date_text_10sp"
+                    android:paddingLeft="5dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:gravity="left"
+                    android:textColor="@color/black"
+                    android:singleLine="true"
+                    android:textAllCaps="true"/>
+
+            </LinearLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="340dp"
+                >
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/vp_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="340dp"
+                    android:layout_marginBottom="10dp" />
+
+                <ImageView
+                    android:id="@+id/iv_left"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="5dp"
+                    android:layout_marginLeft="30dp"
+                    android:src="@drawable/ic_left_arrow"
+                    android:layout_gravity="center_vertical|left"/>
+
+                <ImageView
+                    android:id="@+id/iv_right"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="5dp"
+                    android:layout_marginRight="30dp"
+                    android:src="@drawable/ic_right_arrow"
+                    android:layout_gravity="center_vertical|right"/>
+
+
+
+            </FrameLayout>
+
+
+            <com.leadinfosoft.littleland.widget.MyHeaderTextView
+                android:id="@+id/tv_title_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:singleLine="true"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textAllCaps="true"
+                android:textSize="16sp"
+                android:textColor="@color/dark_gray_text"
+                />
+
+            <com.leadinfosoft.littleland.widget.MyTextView
+                android:id="@+id/tv_body_main"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textSize="14sp"
+                android:textColor="@color/lite_black"
+                android:text=""/>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_parent_opinion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="My Opinion"
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:background="@color/image_boder"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"/>
+
+
+    <TextView
+        android:id="@+id/tv_teacher_viewall_opinion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="View All Opinion"
+        android:textAllCaps="true"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@color/image_boder"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"/>
+
+</LinearLayout>

@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layoutDirection="rtl"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_my_message_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.github.siyamed.shapeimageview.CircularImageView
+                    android:id="@+id/iv_my_imageview_1"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/techer_calender_bg"
+                    app:siBorderColor="@color/message_gray_background"
+                    app:siBorderWidth="2dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="15dp"
+
+                            android:layout_marginLeft="-10dp"
+                            android:src="@drawable/message_right_arrow_orange" />
+
+                        <TextView
+                            android:id="@+id/tv_my_message_desc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/radius_with_orange_background_for_message_screen"
+                            android:gravity="center_vertical|right"
+                            android:padding="5dp"
+                            android:text="test"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_my_date_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="24 sep, 2017"
+                android:textColor="@color/stoke_color"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_my_attachment_view"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.github.siyamed.shapeimageview.CircularImageView
+                    android:id="@+id/iv_my_imageview_2"
+
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/techer_calender_bg"
+                    app:siBorderColor="@color/message_gray_background"
+                    app:siBorderWidth="2dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="15dp"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_marginTop="20dp"
+                            android:src="@drawable/message_right_arrow_orange" />
+
+
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/low_radius_with_orange_stoke"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+
+                                <com.github.siyamed.shapeimageview.RoundedImageView
+                                    android:id="@+id/iv_my_image"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="100dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/techer_calender_bg"
+                                    app:siBorderColor="@color/techer_orange"
+                                    app:siBorderWidth="1dp"
+                                    app:siRadius="25dp"
+
+                                    app:siSquare="true" />
+
+                                <ImageView
+                                    android:id="@+id/iv_my_video_image"
+
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/ic_play_video" />
+
+
+                            </FrameLayout>
+
+                            <TextView
+                                android:id="@+id/tv_my_text_with_image"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text="HELLO "
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_my_date_2"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="24 sep, 2017"
+                android:textColor="@color/stoke_color"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_opposite_message_view"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+
+                        <TextView
+                            android:id="@+id/tv_opposite_message_desc"
+
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/radius_with_gray_background"
+                            android:gravity="left|center_vertical"
+                            android:padding="5dp"
+                            android:text=" Text"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="15dp"
+                            android:layout_marginRight="-10dp"
+
+                            android:src="@drawable/message_left_aero_gray" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <com.github.siyamed.shapeimageview.CircularImageView
+                    android:id="@+id/iv_opposite_image_1"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/techer_calender_bg"
+                    app:siBorderColor="@color/message_gray_background"
+                    app:siBorderWidth="2dp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_opposite_date_1"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="24 sep, 2017"
+                android:textColor="@color/stoke_color"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_opposite_attachment_view"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+
+                    android:layout_weight="1"
+                    android:gravity="left"
+
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/low_radius_with_message_gray_color_stoke"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="5dp"
+
+                        android:visibility="visible">
+
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+
+                            <com.github.siyamed.shapeimageview.RoundedImageView
+                                android:id="@+id/iv_opposite_image"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/techer_calender_bg"
+                                app:siBorderColor="@color/message_gray_background"
+                                app:siBorderWidth="1dp"
+                                app:siRadius="25dp"
+                                app:siSquare="true" />
+
+                            <ImageView
+                                android:id="@+id/iv_opposite_video_image"
+
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_play_video" />
+
+
+                        </FrameLayout>
+
+                        <TextView
+                            android:id="@+id/tv_opposite_text_with_image"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="HELLO"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="15dp"
+                    android:layout_marginRight="-15dp"
+                    android:layout_marginTop="25dp"
+                    android:src="@drawable/message_left_aero_gray" />
+
+
+                <com.github.siyamed.shapeimageview.CircularImageView
+                    android:id="@+id/iv_opposite_image_2"
+
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/techer_calender_bg"
+                    app:siBorderColor="@color/message_gray_background"
+                    app:siBorderWidth="2dp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_opposite_date_2"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="24 sep, 2017"
+                android:textColor="@color/stoke_color"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
